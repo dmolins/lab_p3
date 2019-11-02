@@ -12,6 +12,11 @@ namespace upc {
 
     for (unsigned int l = 0; l < r.size(); ++l) {
   		/// \TODO Compute the autocorrelation r[l]
+      r[l] = 0;
+			for (unsigned int s=0; s<x.size()-l; ++s){
+				r[l] = r[l]+x[s]*x[s+l];
+			}
+
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
@@ -27,6 +32,10 @@ namespace upc {
     switch (win_type) {
     case HAMMING:
       /// \TODO Implement the Hamming window
+        float a = 0.54, b= 0.46;
+				for (unsigned int n=0; n<frameLen; ++n){
+					window[n] = a - b*cos((2*M_PI*n)/(frameLen-1));
+				}
       break;
     case RECT:
     default:
@@ -75,6 +84,18 @@ namespace upc {
 	///    - The lag corresponding to the maximum value of the pitch.
     ///	   .
 	/// In either case, the lag should not exceed that of the minimum value of the pitch.
+    	bool negative = false;		
+		  for (iR = r.begin(); iR != r.end(); ++iR){
+			  //cerr << "Valor de iR: " << *iR << "; Valor de iRMax: " << *iRMax << "\n";
+			  if (negative && *iR > *iRMax && (iR - r.begin()) > npitch_min && (iR - r.begin()) < npitch_max){
+				iRMax = iR;
+			  } else if (!negative && *iR < 0){
+				negative = true;
+				iRMax = iR;		
+			  }
+		  }
+
+
 
     unsigned int lag = iRMax - r.begin();
 
