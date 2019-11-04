@@ -1,1 +1,8 @@
 pitch_db/test
+.DS_Store
+Doxyfile
+bin/
+html/
+p3_pitch.pdf
+pav_4141.f0
+pav_4141.wav
