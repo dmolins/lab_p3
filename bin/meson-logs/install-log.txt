@@ -1,0 +1,13 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/C:/PAV/P3/lab_p3/lib/libpav.a
+/C:/PAV/P3/lab_p3/bin/get_pitch
+/C:/PAV/P3/lab_p3/bin/pitch_evaluate
+/mnt/c/PAV/P3/lab_p3/html/.doxygen.done
+/C:/PAV/P3/lab_p3/bin/run_get_pitch.sh
+/C:/PAV/P3/lab_p3/bin
+/C:/PAV/P3/lab_p3/lib
+/C:/PAV/P3/lab_p3
+/C:/PAV/P3
+/C:/PAV
+/C:

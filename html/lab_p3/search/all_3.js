@@ -5,6 +5,7 @@ var searchData=
   ['circularindex',['CircularIndex',['../classupc_1_1CircularIndex.html',1,'upc::CircularIndex'],['../classupc_1_1CircularIndex.html#a80c03ec94380d80132ca01b39ef9b0e7',1,'upc::CircularIndex::CircularIndex(int s=1)'],['../classupc_1_1CircularIndex.html#abca2976e157594a74d4aa1c06b0c4c2e',1,'upc::CircularIndex::CircularIndex(CircularIndex &amp;ci)']]],
   ['clear',['clear',['../classupc_1_1DigitalFilter.html#ad6c0f9584687642434081448f85d89f9',1,'upc::DigitalFilter']]],
   ['clear_5fbuffers',['clear_buffers',['../classffft_1_1OscSinCos.html#a1be4a9ec10517ae2615d2925c05d7d29',1,'ffft::OscSinCos']]],
+  ['clip_5fpercentage',['CLIP_PERCENTAGE',['../get__pitch_8cpp.html#ad8b6baf722eb9bb64ab2c02ce94ce0d4',1,'get_pitch.cpp']]],
   ['compare',['compare',['../pitch__evaluate_8cpp.html#a77944b5af41e256ec0ba1f00442cf9ba',1,'pitch_evaluate.cpp']]],
   ['compute_5fdirect_5fpass_5f1_5f2',['compute_direct_pass_1_2',['../classffft_1_1FFTReal.html#a64d9633fa7efa935dc25cebf90412ad6',1,'ffft::FFTReal']]],
   ['compute_5fdirect_5fpass_5f3',['compute_direct_pass_3',['../classffft_1_1FFTReal.html#ae831e38734a15575346b85f13d1f58b5',1,'ffft::FFTReal']]],

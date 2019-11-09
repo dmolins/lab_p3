@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string.h>
 #include <errno.h>
+#include <math.h>
 
 #include "wavfile_mono.h"
 #include "pitch_analyzer.h"
@@ -12,6 +13,7 @@
 
 #define FRAME_LEN   0.030 /* 30 ms. */
 #define FRAME_SHIFT 0.015 /* 15 ms. */
+#define CLIP_PERCENTAGE 0 // Percentage of the amplitude
 
 using namespace std;
 using namespace upc;
@@ -64,7 +66,18 @@ int main(int argc, const char *argv[]) {
   /// \TODO
   /// Preprocess the input signal in order to ease pitch estimation. For instance,
   /// central-clipping or low pass filtering may be used.
-  
+  // Center Clipping
+	// Preprocessing: Center clipping
+	float a_max = *max_element(x.begin(),x.end());
+	float cl = (a_max/100)*CLIP_PERCENTAGE;
+	for (unsigned int i=0; i<x.size(); i++){
+		if (fabs(x[i]) > cl){	
+			x[i] = x[i] - cl*(fabs(x[i])/x[i]);
+		} else {
+			x[i] = 0;
+		}		
+	}
+
   // Iterate for each frame and save values in f0 vector
   vector<float>::iterator iX;
   vector<float> f0;
