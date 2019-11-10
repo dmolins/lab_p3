@@ -123,8 +123,8 @@ Macros</h2></td></tr>
 <tr class="separator:a7d356b7d5a77c1e2fb7e8154f65ebfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ba23fac7d991d8e893ea34ef05ba00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="get__pitch_8cpp.html#a69ba23fac7d991d8e893ea34ef05ba00">FRAME_SHIFT</a>&#160;&#160;&#160;0.015 /* 15 ms. */</td></tr>
 <tr class="separator:a69ba23fac7d991d8e893ea34ef05ba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b6baf722eb9bb64ab2c02ce94ce0d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="get__pitch_8cpp.html#ad8b6baf722eb9bb64ab2c02ce94ce0d4">CLIP_PERCENTAGE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ad8b6baf722eb9bb64ab2c02ce94ce0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb447a7da70893212e1e61e6086c6e80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="get__pitch_8cpp.html#aeb447a7da70893212e1e61e6086c6e80">CLIP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aeb447a7da70893212e1e61e6086c6e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -137,14 +137,14 @@ Variables</h2></td></tr>
 <tr class="separator:a6d6e26e7e3af2d4bd47f6582aff224f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ad8b6baf722eb9bb64ab2c02ce94ce0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8b6baf722eb9bb64ab2c02ce94ce0d4">&#9670;&nbsp;</a></span>CLIP_PERCENTAGE</h2>
+<a id="aeb447a7da70893212e1e61e6086c6e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb447a7da70893212e1e61e6086c6e80">&#9670;&nbsp;</a></span>CLIP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CLIP_PERCENTAGE&#160;&#160;&#160;0</td>
+          <td class="memname">#define CLIP&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,11 +222,12 @@ Variables</h2></td></tr>
 <dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000002">TODO:</a></b></dt><dd><b>[TODO]:</b><br />
  Preprocess the input signal in order to ease pitch estimation. For instance, central-clipping or low pass filtering may be used. </dd></dl>
 <dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000003">TODO:</a></b></dt><dd><b>[TODO]:</b><br />
- Postprocess the estimation in order to supress errors. For instance, a median filter or time-warping may be used. Filtro de mediana </dd></dl>
+ Postprocess the estimation in order to supress errors. For instance, a median filter or time-warping may be used. </dd></dl>
+<p>Filtro de mediana </p>
 
 <p class="definition">Definition at line <a class="el" href="get__pitch_8cpp_source.html#l00040">40</a> of file <a class="el" href="get__pitch_8cpp_source.html">get_pitch.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="get__pitch_8cpp_source.html#l00016">CLIP_PERCENTAGE</a>, <a class="el" href="get__pitch_8cpp_source.html#l00014">FRAME_LEN</a>, <a class="el" href="get__pitch_8cpp_source.html#l00015">FRAME_SHIFT</a>, <a class="el" href="wavfile__mono_8cpp_source.html#l00008">readwav_mono()</a>, and <a class="el" href="get__pitch_8cpp_source.html#l00021">USAGE</a>.</p>
+<p class="reference">References <a class="el" href="get__pitch_8cpp_source.html#l00016">CLIP</a>, <a class="el" href="get__pitch_8cpp_source.html#l00014">FRAME_LEN</a>, <a class="el" href="get__pitch_8cpp_source.html#l00015">FRAME_SHIFT</a>, <a class="el" href="wavfile__mono_8cpp_source.html#l00008">readwav_mono()</a>, and <a class="el" href="get__pitch_8cpp_source.html#l00021">USAGE</a>.</p>
 
 </div>
 </div>

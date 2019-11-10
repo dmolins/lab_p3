@@ -45,3 +45,7 @@
 16	5694	1573372828	get_pitch@exe/src_get_pitch_get_pitch.cpp.o	44038ad42992363b
 5695	7040	1573372830	get_pitch	e1c79ab2e59508ce
 7041	25936	1573372849	.doxygen.done	72d59f07b43b75e2
+18	4513	1573376851	get_pitch@exe/src_get_pitch_pitch_analyzer.cpp.o	79a954b43213fce
+14	5374	1573376852	get_pitch@exe/src_get_pitch_get_pitch.cpp.o	44038ad42992363b
+5375	6683	1573376853	get_pitch	e1c79ab2e59508ce
+6684	23166	1573376869	.doxygen.done	72d59f07b43b75e2
