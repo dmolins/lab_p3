@@ -67,7 +67,6 @@ int main(int argc, const char *argv[]) {
   /// Preprocess the input signal in order to ease pitch estimation. For instance,
   /// central-clipping or low pass filtering may be used.
   // Center Clipping
-	// Preprocessing: Center clipping
 	float a_max = *max_element(x.begin(),x.end());
 	float cl = (a_max/100)*CLIP_PERCENTAGE;
 	for (unsigned int i=0; i<x.size(); i++){
@@ -89,6 +88,17 @@ int main(int argc, const char *argv[]) {
   /// \TODO
   /// Postprocess the estimation in order to supress errors. For instance, a median filter
   /// or time-warping may be used.
+  /// Filtro de mediana
+	int i, size = 5;
+	float aux[size];
+	for(iX = f0.begin() + 2; iX+2 != f0.end() ; ++iX){
+		for(i = -size/2; i <= size/2 ; ++i){
+			aux[i+size/2] = *(iX+i);
+		}
+		sort(aux,aux+size); // Sort all elements
+		*iX = aux[size/2]; // Take the median
+	}
+
 
   // Write f0 contour into the output file
   ofstream os(output_txt);
